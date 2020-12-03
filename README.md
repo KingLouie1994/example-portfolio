@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# This is an example portfolio for a non existing person. I built it as part of a creative React course on the Internet. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
