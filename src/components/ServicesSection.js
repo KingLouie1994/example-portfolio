@@ -12,13 +12,13 @@ import styled from "styled-components";
 import { Container, Description, Image } from "../styles";
 
 // Import Animation
-import { fade } from "../animation";
+import { sectionAnimation } from "../animation";
 import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+    <Services variants={sectionAnimation} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
