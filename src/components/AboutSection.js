@@ -6,45 +6,21 @@ import { motion } from "framer-motion";
 import { Container, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
-  // Animations
-  const titleAnim = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { duration: 2 },
-    },
-  };
-
-  const container = {
-    hidden: { x: 100 },
-    show: {
-      x: 0,
-      transition: {
-        duration: 2,
-        ease: "easeOut",
-      },
-    },
-  };
 
   return (
     <Container>
       <Description>
-        <motion.div
-          className="title"
-          variants={container}
-          initial="hidden"
-          animate="show"
-        >
+        <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make </motion.h2>
+            <motion.h2>We work to make </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>
+            <motion.h2>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>true.</motion.h2>
+            <motion.h2>true.</motion.h2>
           </Hide>
         </motion.div>
         <p>
