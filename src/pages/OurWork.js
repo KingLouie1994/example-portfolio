@@ -6,6 +6,9 @@ import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 
+// Import Components
+import ScrollTop from "../components/ScrollTop";
+
 // Import Styles
 import styled from "styled-components";
 
@@ -61,6 +64,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };

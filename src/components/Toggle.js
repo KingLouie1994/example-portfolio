@@ -1,6 +1,8 @@
 // Import React Hooks
-import { motion } from "framer-motion";
 import { useState } from "react";
+
+// Import Animation
+import { motion } from "framer-motion";
 
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
