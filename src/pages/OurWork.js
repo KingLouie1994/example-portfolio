@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 // Import Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "./animation";
+import { pageAnimation } from "../animation";
 
 const OurWork = () => {
   return (
