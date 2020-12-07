@@ -41,6 +41,9 @@ const MovieDetail = () => {
               <Award award={award} key={award.title} />
             ))}
           </Awards>
+          <ImageDisplay>
+            <img src={movie.secondaryImg} alt="movie2" />
+          </ImageDisplay>
         </Details>
       )}
     </>
@@ -70,11 +73,20 @@ const HeadLine = styled.div`
 `;
 
 const Awards = styled.div`
-    min-height: 80vh;
-    display: flex;
-    margin: 5rem;
-    align-items: center;
-    justify-content: space-around;
+  min-height: 80vh;
+  display: flex;
+  margin: 5rem;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const ImageDisplay = styled.div`
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
 `;
 
 export default MovieDetail;
