@@ -1,11 +1,14 @@
+// Import Components
+import Wave from "../components/Wave";
+
 // Import of images
 import home1 from "../img/home1.png";
 
 // Styling
-import { motion } from "framer-motion";
 import { Container, Description, Image, Hide } from "../styles";
 
 // Import Animation
+import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../animation";
 
 const AboutSection = () => {
@@ -38,6 +41,7 @@ const AboutSection = () => {
           variants={photoAnimation}
         />
       </Image>
+      <Wave />
     </Container>
   );
 };
