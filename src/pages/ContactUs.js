@@ -47,7 +47,12 @@ const Contact = () => {
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
-  min-height: 90vh;
+  height: 90vh;
+  @media (max-width: 1300px) {
+    padding: 2rem;
+    font-size: 0.5rem;
+    height: 80vh;
+  }
 `;
 
 const Title = styled.div`
@@ -64,6 +69,11 @@ const Circle = styled.div`
   width: 3rem;
   height: 3rem;
   background: #353535;
+  @media (max-width: 1300px) {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+  }
 `;
 
 const Social = styled(motion.div)`

@@ -29,7 +29,7 @@ const Nav = () => {
 
 // Styled Components
 const StyledNav = styled.nav`
-  min-height: 10vh;
+  height: 10vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -54,6 +54,23 @@ const StyledNav = styled.nav`
   #logo {
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: 20vh;
+    ul{
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+    li{
+      padding: 0;
+    }
+    #logo{
+      display: inline-block;
+      margin: 2rem;
+    }
   }
 `;
 
